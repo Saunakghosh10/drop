@@ -8,12 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        caveat: ["var(--font-caveat)"],
+        sans: ["var(--font-inter)"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        wall: {
+          background: "#f5f5f5",
+          text: "#333333",
+          accent: "#000000",
+        }
       },
     },
   },
   plugins: [],
 };
+
 export default config;
