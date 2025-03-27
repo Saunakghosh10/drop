@@ -1,7 +1,7 @@
 import type { QueryResult } from 'pg';
 
 // Create a connection string using env variables
-const connectionString = process.env.POSTGRES_URL || 'postgresql://dropdb_owner:npg_b4nBjqVLGp5g@ep-sparkling-violet-a1uemzpw-pooler.ap-southeast-1.aws.neon.tech/dropdb?sslmode=require';
+const connectionString = process.env.POSTGRES_URL || '';
 
 // Create a function to get a connection pool
 const getPool = async () => {
